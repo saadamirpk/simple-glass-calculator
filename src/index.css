@@ -5,9 +5,66 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to bottom right, #0fa1ac, #c0246a);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.calculator{
+  
+  width: fit-content;
+  display: grid;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 0px;
+  background: transparent;
+  color: white;
+  
+}
+
+.holder{
+  margin-top: 50px;
+  height: 100vh;
+}
+
+.holder button{
+  color: white;
+  font-size: 28px;
+}
+
+button{
+  width: 75px;
+  height: 75px;
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+}
+
+.op{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+button:hover{
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+}
+
+button:active{
+  background: rgba(255, 255, 255, 0.5);
+}
+
+p{
+  padding: 5px;
+  margin:0;
+}
+
+.textitem{
+  grid-column: 2/5;
+  text-align: right;
+  padding: 5px 5px;
+  border-top: 1px rgba(255, 255, 255, 0.05) solid;
+  border-right: 1px rgba(255, 255, 255, 0.05) solid;
 }
